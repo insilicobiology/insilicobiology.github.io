@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In Silico Biology | Computational Biology & Data Science</title>
-    <!-- Google Fonts & Tailwind CSS for modern styling -->
+    <title>In Silico Biology | AI in Public Health & Bioinformatics</title>
+    <!-- Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
 
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <header class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="font-bold text-lg tracking-tight text-indigo-600">in silico biology</span>
+            <a href="#" class="font-extrabold text-lg tracking-tight text-indigo-600">in silico biology</a>
             <nav class="space-x-6 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#about" class="hover:text-indigo-600 transition">About Me</a>
                 <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
                 <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
             </nav>
@@ -29,13 +29,13 @@
     <section class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center md:text-left md:flex md:items-center md:justify-between">
         <div class="md:w-2/3">
             <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
-                Computational Biologist & Data Scientist
+                AI in Public Health @ Robert Koch Institute 🦠🇩🇪
             </span>
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
-                Hi there! 👋 Welcome to <span class="text-indigo-600">In Silico Biology</span>.
+                Hi Friend 👋 Welcome to <span class="text-indigo-600">In Silico Biology</span>.
             </h1>
             <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                Passionate about building bridges between biology, medicine, and tech. Turning complex biological data into clear computational insights, machine learning tools, and reproducible research.
+                Passionate about applying machine learning and computational biology to public health and immunology challenges. Building robust pipelines, reproducible research, and open-source tooling for the scientific community.
             </p>
             <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                 <a href="#contact" class="bg-indigo-600 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition text-center">
@@ -47,41 +47,70 @@
             </div>
         </div>
         <div class="mt-10 md:mt-0 md:w-1/3 flex justify-center">
-            <div class="w-48 h-48 bg-gradient-to-tr from-indigo-500 to-teal-400 rounded-3xl shadow-xl flex items-center justify-center text-white text-6xl font-black">
-                ISB
+            <div class="w-48 h-48 bg-gradient-to-tr from-indigo-600 to-teal-400 rounded-3xl shadow-xl flex items-center justify-center text-white text-5xl font-black tracking-tighter">
+                RKI.
             </div>
+        </div>
+    </section>
+
+    <!-- Quote Banner -->
+    <section class="max-w-4xl mx-auto px-6 py-6">
+        <div class="bg-indigo-50/60 border border-indigo-100 rounded-2xl p-6 text-center md:text-left">
+            <blockquote class="text-indigo-900 italic text-sm md:text-base leading-relaxed">
+                "Mathematics is biology's next microscope, only better; biology is mathematics' next physics, only better."
+            </blockquote>
+            <p class="text-indigo-700 text-xs font-semibold mt-2 uppercase tracking-wider">— Joel E. Cohen</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-white py-16 border-y border-slate-100">
+    <section id="about" class="bg-white py-16 border-y border-slate-100 mt-6">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6">About the Hub</h2>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">About Me</h2>
             <div class="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                    Mathematics is biology's next microscope, only better; biology is mathematics' next physics, only better. At In Silico Biology, we focus on developing robust computational architectures, interpretable machine learning frameworks (like UbiQTree), and scalable pipelines for modern bioinformatics challenges.
+                    I am a computational biologist working at the intersection of machine learning, public health, and data science. Currently based at the <strong>Robert Koch Institute</strong> in Berlin, my day-to-day work involves exploring how advanced computational models can help monitor, understand, and improve public health outcomes.
                 </p>
                 <p>
-                    Whether exploring multi-omics datasets, clinical machine learning models, or uncertainty quantification in tree-based algorithms, the goal remains the same: making data-driven biology reliable and open to the scientific community.
+                    Beyond institutional research, I enjoy developing open-source libraries that bridge the gap between heavy mathematical theory and everyday biological workflows—making advanced computational biology transparent, robust, and accessible.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Projects / Featured Work Section -->
+    <!-- Projects Section -->
     <section id="projects" class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-2xl font-bold text-slate-900 mb-8">Featured Repository</h2>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-            <div class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold text-slate-900">UbiQTree</h3>
-                <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-medium">Active Development</span>
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">Projects & Research</h2>
+        <p class="text-slate-500 text-sm mb-8">Selected publications, data analysis pipelines, and open-source tools.</p>
+        
+        <div class="space-y-6">
+            <!-- Primary Research Paper Spotlight -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-slate-900">Kmeans_TOBIAS_CD4Thymus_paper</h3>
+                    <span class="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md font-medium">Research Publication</span>
+                </div>
+                <p class="text-slate-600 text-sm mb-4">
+                    Computational workflow and analysis pipeline investigating regulatory dynamics in CD4 Thymus development using TOBIAS and clustering methodologies.
+                </p>
+                <a href="https://github.com/AESousaLabIMM/Kmeans_TOBIAS_CD4Thymus_paper" target="_blank" class="text-indigo-600 text-sm font-semibold hover:underline inline-flex items-center gap-1">
+                    View Paper Repository &rarr;
+                </a>
             </div>
-            <p class="text-slate-600 text-sm mb-4">
-                Uncertainty quantification and explainable AI (XAI) framework for tree ensembles, tailored to give researchers robust epistemic vs. aleatoric variance insights.
-            </p>
-            <a href="https://github.com/insilicobiology/lukeframework" target="_blank" class="text-indigo-600 text-sm font-semibold hover:underline inline-flex items-center gap-1">
-                View on GitHub &rarr;
-            </a>
+
+            <!-- Side Project Spotlight -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-slate-900">Project Luke</h3>
+                    <span class="text-xs bg-amber-50 text-amber-700 px-2.5 py-1 rounded-md font-medium">Open-Source Side Project</span>
+                </div>
+                <p class="text-slate-600 text-sm mb-4">
+                    An open-source project taking a friend's mathematically complex uncertainty framework with immense potential and shaping it into an accessible, intuitive tool for common biologists.
+                </p>
+                <a href="https://github.com/insilicobiology/lukeframework" target="_blank" class="text-indigo-600 text-sm font-semibold hover:underline inline-flex items-center gap-1">
+                    Explore Luke Framework &rarr;
+                </a>
+            </div>
         </div>
     </section>
 
@@ -90,10 +119,10 @@
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-2xl font-bold mb-4">Let's Collaborate</h2>
             <p class="text-slate-400 max-w-xl mx-auto mb-8">
-                Have a clinical or bioinformatics project that could benefit from computational tooling? Feel free to reach out.
+                Interested in public health AI, immunological data science, or open-source bioinformatics tools? Let's connect!
             </p>
-            <a href="mailto:contact@insilicobiology" class="inline-block bg-indigo-600 text-white font-medium px-8 py-3 rounded-xl hover:bg-indigo-500 transition">
-                Send an Email
+            <a href="mailto:contact@insilicobiology.eu" class="inline-block bg-indigo-600 text-white font-medium px-8 py-3 rounded-xl hover:bg-indigo-500 transition shadow-lg shadow-indigo-900/50">
+                Get in Touch
             </a>
         </div>
     </section>
